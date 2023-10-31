@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'pagina_cadastro.css') }}">
+    <title>Faça seu cadastro</title>
+</head>
+<body>
+    <div id="form-cadastro">
+        <h1>Faça seu Cadastro</h1>
+        <form action="http://localhost:5000/cadastro" method="POST">
+            <label for="input-nome">Digite seu Nome Completo:</label><br>
+            <input id="input-nome" type="text" name="nome-usuario" placeholder="Nome"><br><br>
+            <label for="input-email">Digite seu email:</label><br>
+            <input id="input-email" type="text" name="email-usuario" placeholder="Email"><br><br>
+            <label for="input-senha">Digite sua senha:</label><br>
+            <input id="input-senha" type="password" name="senha-usuario" placeholder="Senha"><br><br>
+            <input id="button-form" type="submit" value="Cadastrar">
+        </form>
+        <a class="link" href="pagina_login.html">Já tem conta?</a>
+    </div>
+
+</body>
+</html>

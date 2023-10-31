@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/faa3c30f58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'pagina_inicial.css') }}">
+    <title>Leia seu anime online</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="/img" alt="logo"></a></li>
+                <li><a href="#">Gênero</a></li>
+                <li>
+                    <div id="search">
+                        <input type="text" placeholder="Buscar anime">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: blueviolet;"></i></a>
+                    </div>
+                    </li>
+                <li>
+                    <a href="/login"><i class="fa-solid fa-user"></i></a>
+                    <a id="button-login-cadastro" href="pagina_cadastro.html"><i class="fa-solid fa-user-plus"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="fundo-branco">
+            <div id="navio">
+                <div class="conteiner">
+                    <a href="#"><img src="{{ url_for('static', filename = '/img/fantasmas.png') }}" alt="historico"></a>
+                    <a href="#">Legenda</a>
+                </div>
+                <div class="conteiner">
+                    <a href="#"><img src="{{ url_for('static', filename = '/img/fantasmas.png') }}" alt="historico"></a>
+                    <a href="#">Legenda</a>
+                </div>
+                <div class="conteiner">
+                    <a href="#"><img src="{{ url_for('static', filename = '/img/fantasmas.png') }}" alt="historico"></a>
+                    <a href="#">Legenda</a>
+                </div>
+                <div class="conteiner">
+                    <a href="#"><img src="{{ url_for('static', filename = '/img/fantasmas.png') }}" alt="historico"></a>
+                    <a href="#">Legenda</a>
+                </div>
+                <div class="conteiner">
+                    <a href="#"><img src="{{ url_for('static', filename = '/img/fantasmas.png') }}" alt="historico"></a>
+                    <a href="#">Legenda</a>
+                </div>
+                <div class="conteiner">
+                    <a href="#"><img src="{{ url_for('static', filename = '/img/fantasmas.png') }}" alt="historico"></a>
+                    <a href="#">Legenda</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

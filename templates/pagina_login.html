@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'pagina_login.css') }}">
+    <title>Faça seu login</title>
+</head>
+<body>
+
+    <div id="form-login">
+        <h1>Faça seu Login</h1>
+        <form action="http://localhost:5000/login" method="POST">
+            <label for="input-nome">Digite seu nome:</label><br>
+            <input id="input-nome" type="text" name="nome-usuario" placeholder="Nome"><br><br>
+            <label for="input-senha">Digite sua senha:</label><br>
+            <input id="input-senha" type="password" name="senha-usuario" placeholder="Senha"><br><br>
+            <input id="button-form" type="submit" value="Entrar">
+        </form>
+        <a class="link" href="pagina_cadastro.html">Crie sua conta!</a>
+        <a class="link" href="#">Esqueceu sua senha?</a>
+        </div>
+
+</body>
+</html>
