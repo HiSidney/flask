@@ -38,7 +38,11 @@ def cadastro():
         arquivo_usuario = open(nome + ".txt", "r")
         arquivo_usuario_read = arquivo_usuario.readlines()
         print(arquivo_usuario_read[0] == nome + "\n")
-        return render_template('pagina_login.html')
+        if arquivo_usuario_read[0] == nome + "\n":
+            print('sucesso')
+            return render_template('pagina_login.html')
+    else:
+        return render_template('pagina_cadastro.html')
             
         
 
